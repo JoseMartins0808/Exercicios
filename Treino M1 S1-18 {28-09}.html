@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de cadastro">
+    <meta name="keywords" content="cadastro, página, kenzie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<header>
+    <h1>Área de Cadastro</h1>
+    <hr>
+</header>
+<body>
+    <main>
+        <section>
+            <h2>Insira seus dados para o seu cadastro:</h2>
+            <form>
+                <p>
+                    <label for="nome"><small>Nome</small></label>
+                    <input name="name" id="nome" type="text" placeholder="Digite seu nome aqui..." required="true">
+                </p>
+                <p>
+                    <label for="email"><small>E-mail</small></label>
+                    <input name="mail" id="email" type="text" placeholder="Digite seu e-mail aqui..." required="true">
+                </p>
+                <p>
+                    <label for="descricao"><small>Descrição</small></label>
+                    <textarea placeholder="Fale mais sobre você aqui..." name="description" id="descricao" required="true"></textarea>
+                </p>
+                <p>
+                    <label for="modulo"><small>Módulo</small></label>
+                    <select id="modulo" name="module">
+                        <option>selecione o módulo:</option>
+                        <option value="m1">M1</option>
+                        <option value="m2">M2</option>
+                        <option value="m3">M3</option>
+                        <option value="m4">M4</option>
+                        <option value="m5">M5</option>
+                        <option value="m6">M6</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="senha"><small>Senha</small></label>
+                    <input name="password" id="senha" type="password" placeholder="Digite sua senha aqui..." required="true">
+                </p>
+                <p>
+                    <label for="confirmar"><small>Confirmar senha</small></label>
+                    <input name="confirm" id="confirmar" type="password" placeholder="Digite novamente sua senha aqui..." required="true">
+                </p>
+                <p>
+                    <p>
+                        <small>Deseja receber novidades pelo seu e-mail?</small>
+                    </p>
+                    <label for="sim"><strong>Sim!</strong></label>
+                    <input name="wmail" value="S" id="sim" type="radio" required="true">
+                    <label for="nao"><small>Não</small></label>
+                    <input name="wmail" value="N" id="nao" type="radio" required="true">
+                </p>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
